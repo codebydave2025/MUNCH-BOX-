@@ -1,0 +1,476 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .rangeHeader {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .rangeSelector {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.rangeSelector {
+    display: flex;
+    gap: 0.5rem;
+    background: #f8f9fa;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+.rangeBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.rangeBtn:hover {
+    color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.rangeBtnActive {
+    background: white;
+    color: #D92323;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.customPicker {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+}
+
+.dateInput {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.statusOverview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.statusCard {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.statusCard:hover {
+    border-color: #D92323;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.statusCardActive {
+    border-color: #D92323;
+    background-color: #fff1f1;
+}
+
+.statusCardActive .statusLabel {
+    color: #D92323;
+}
+
+.statusCardActive .statusCount {
+    color: #1a1a1a;
+}
+
+.statusHeader_small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statusIconWrapper_small {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.statusCount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.statusLabel {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+@media (max-width: 768px) {
+    .actionBar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .searchWrapper {
+        max-width: none;
+    }
+}
+
+.searchWrapper {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.625rem 1rem 0.625rem 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+    border-color: #D92323;
+}
+
+.filterGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #666;
+    background-color: #f8f9fa;
+}
+
+.select {
+    border: none;
+    background: transparent;
+    padding: 0.625rem 0.25rem;
+    font-size: 0.875rem;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+}
+
+.refreshBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.refreshBtn:hover {
+    background-color: #f0f0f0;
+    color: #D92323;
+}
+
+.ordersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .ordersGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.orderCard {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.orderCard:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.orderLabel {
+    font-size: 0.6875rem;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.orderId {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.statusBadge {
+    padding: 0.375rem 0.75rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.orderDate {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: #666;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sectionTitle {
+    font-size: 0.75rem;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.25rem;
+}
+
+.customerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.infoLine {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.infoLine strong {
+    font-weight: 600;
+}
+
+.itemsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.itemDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.mealGroupTag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #D92323;
+    background: #fff1f1;
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+@media (max-width: 480px) {
+    .actions {
+        flex-direction: column;
+    }
+}
+
+.btnConfirm,
+.btnProcess,
+.btnDispatch,
+.btnDeliver {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.btnConfirm {
+    background-color: #3b82f6;
+}
+
+.btnProcess {
+    background-color: #8b5cf6;
+}
+
+.btnDispatch {
+    background-color: #06b6d4;
+}
+
+.btnDeliver {
+    background-color: #10b981;
+}
+
+.btnCancel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: white;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    cursor: pointer;
+}
+
+.loadingWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 1rem;
+    color: #666;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+    color: #D92323;
+    width: 32px;
+    height: 32px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.emptyState {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    text-align: center;
+    color: #999;
+}
+
+.emptyState h3 {
+    color: #333;
+    margin: 1rem 0 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .statusOverview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statusCard {
+        padding: 1rem;
+    }
+
+    .statusCount {
+        font-size: 1.25rem;
+    }
+}

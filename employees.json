@@ -1,0 +1,26 @@
+[
+    {
+        "id": "EMP-001",
+        "name": "Ayodeji Admin",
+        "role": "Admin",
+        "status": "Active",
+        "email": "admin@munchbox.com",
+        "phone": "+234 801 234 5678"
+    },
+    {
+        "id": "EMP-002",
+        "name": "Sarah Cashier",
+        "role": "Cashier",
+        "status": "Active",
+        "email": "sarah@munchbox.com",
+        "phone": "+234 802 345 6789"
+    },
+    {
+        "id": "EMP-003",
+        "name": "John Cook",
+        "role": "Kitchen Staff",
+        "status": "Active",
+        "email": "john@munchbox.com",
+        "phone": "+234 803 456 7890"
+    }
+]

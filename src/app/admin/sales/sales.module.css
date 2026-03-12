@@ -1,0 +1,508 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.rangeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rangeSelector {
+    display: flex;
+    gap: 0.5rem;
+    background: #f8f9fa;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+.rangeBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.rangeBtn:hover {
+    color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.rangeBtnActive {
+    background: white;
+    color: #D92323;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.customPicker {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+}
+
+.dateInput {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.actionBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.searchWrapper {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.625rem 1rem 0.625rem 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+    border-color: #D92323;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Old datePicker removed */
+
+.refreshBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.refreshBtn:hover {
+    background: #f0f0f0;
+    color: #D92323;
+}
+
+.printBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background-color: #D92323;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.printBtn:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 4px 12px rgba(217, 35, 35, 0.2);
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.exportBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background-color: white;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.exportBtn:hover {
+    background-color: #f0f0f0;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.summaryCard {
+    background: white;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.summaryLabel {
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.summaryValue {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.tableCard {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.tableHeader {
+    padding: 0 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.filterTabs {
+    display: flex;
+    gap: 2rem;
+}
+
+.tab {
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.tab:hover {
+    color: #333;
+}
+
+.tabActive {
+    color: #D92323;
+}
+
+.tabActive::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #D92323;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    background-color: #fafafa;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: 0.05em;
+}
+
+.table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9375rem;
+    color: #333;
+}
+
+.receiptId {
+    font-weight: 600;
+    color: #D92323;
+}
+
+.dateTime {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.time {
+    font-size: 0.75rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.customer {
+    font-weight: 500;
+}
+
+.itemsCount {
+    color: #666;
+}
+
+.amount {
+    font-weight: 700;
+}
+
+.methodBadge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.statusBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+}
+
+.completed {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+.refunded {
+    background-color: #fef2f2;
+    color: #ef4444;
+}
+
+.iconBtn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.iconBtn:hover {
+    background-color: #f0f0f0;
+    color: #D92323;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #fafafa;
+}
+
+.paginationInfo {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.paginationBtns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pageBtn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    background: white;
+    border-radius: 6px;
+    color: #666;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.pageBtnActive {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D92323;
+    color: white;
+    border: 1px solid #D92323;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.pageBtn:hover:not(:disabled) {
+    background-color: #f0f0f0;
+}
+
+.pageBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .actionBar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .searchWrapper {
+        max-width: none;
+    }
+
+    .summaryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .printBtn span {
+        display: none;
+    }
+
+    .printBtn {
+        padding: 0.625rem;
+        justify-content: center;
+    }
+}
+
+@media print {
+
+    /* Hide everything except the main content */
+    :global(aside),
+    :global(header),
+    :global(nav),
+    .rangeHeader,
+    .actionBar,
+    .refreshBtn,
+    .printBtn,
+    .pagination,
+    .tab,
+    tr>th:last-child,
+    tr>td:last-child {
+        display: none !important;
+    }
+
+    .container {
+        padding: 0 !important;
+        background: white !important;
+        margin: 0 !important;
+    }
+
+    .summaryGrid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        margin-bottom: 2rem;
+    }
+
+    .summaryCard {
+        border: 1px solid #eee !important;
+        box-shadow: none !important;
+    }
+
+    .tableCard {
+        border: none !important;
+    }
+
+    .table th {
+        background-color: #f9fafb !important;
+        color: black !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .receiptId {
+        color: black !important;
+    }
+
+    /* Add a brand header for print */
+    .container::before {
+        content: "MUNCHBOX SALES REPORT";
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #D92323;
+        padding-bottom: 0.5rem;
+    }
+}

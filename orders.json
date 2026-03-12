@@ -1,0 +1,844 @@
+[
+  {
+    "id": "ORD-32643",
+    "customer": {
+      "name": "ejfif",
+      "phone": "20302039203",
+      "altPhone": "12345678911",
+      "address": "sdjisds",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "rating": 4,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      },
+      {
+        "id": "takeaway-big",
+        "name": "Takeaway (Big)",
+        "price": 300,
+        "image": "/hero-food.png",
+        "category": "Packaging",
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 1400,
+    "status": "confirmed",
+    "date": "2026-03-12T17:33:10.846Z"
+  },
+  {
+    "id": "ORD-54687",
+    "customer": {
+      "name": "dwwew",
+      "phone": "13190313910",
+      "altPhone": "12345678901",
+      "address": "rfe",
+      "notes": "12345678901"
+    },
+    "items": [
+      {
+        "id": "takeaway-big",
+        "name": "Takeaway (Big)",
+        "price": 300,
+        "image": "/hero-food.png",
+        "category": "Packaging",
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      },
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/WhatsApp Image 2026-02-05 at 6.44.36 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 5,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      },
+      {
+        "id": "mains-6",
+        "name": "Special Stir Fry Pasta",
+        "price": 3000,
+        "image": "/special stairfry-pasta.jpg.jpeg",
+        "category": "Mains",
+        "featured": false,
+        "rating": 5,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 4300,
+    "status": "cancelled",
+    "date": "2026-02-25T12:34:41.899Z"
+  },
+  {
+    "id": "ORD-42479",
+    "customer": {
+      "name": "francis",
+      "phone": "07035758561",
+      "address": "hjku",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "mains-5",
+        "name": "Stir Fry Pasta",
+        "price": 1500,
+        "image": "/WhatsApp Image 2026-02-05 at 6.45.21 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 4,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      },
+      {
+        "id": "protein-1",
+        "name": "Beef",
+        "price": 300,
+        "image": "/beef-image.jpg.jpg",
+        "category": "Protein & Sauces",
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      },
+      {
+        "id": "protein-6",
+        "name": "Egg (Boiled)",
+        "price": 300,
+        "image": "/boiled-egg.jpg.jpg",
+        "category": "Protein & Sauces",
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 2800,
+    "status": "delivered",
+    "date": "2026-02-23T14:19:07.324Z"
+  },
+  {
+    "id": "ORD-17774",
+    "customer": {
+      "name": "wewq",
+      "phone": "34",
+      "address": "sdsd",
+      "notes": "4"
+    },
+    "items": [
+      {
+        "id": "mains-6",
+        "name": "Special Stir Fry Pasta",
+        "price": 3000,
+        "image": "/special stairfry-pasta.jpg.jpeg",
+        "category": "Mains",
+        "featured": false,
+        "rating": 5,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      },
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/WhatsApp Image 2026-02-05 at 6.44.36 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 5,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 2"
+      }
+    ],
+    "fees": {
+      "takeaway": 400,
+      "delivery": 500
+    },
+    "total": 4200,
+    "status": "delivered",
+    "date": "2026-02-23T14:13:22.756Z"
+  },
+  {
+    "id": "ORD-66107",
+    "customer": {
+      "name": "edw",
+      "phone": "383",
+      "address": "23qe",
+      "notes": "3ew"
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "rating": 4,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 1100,
+    "status": "confirmed",
+    "date": "2026-02-23T14:09:43.214Z"
+  },
+  {
+    "id": "ORD-47741",
+    "customer": {
+      "name": "qwee",
+      "phone": "242w",
+      "address": "wrwr",
+      "notes": "we"
+    },
+    "items": [
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/WhatsApp Image 2026-02-05 at 6.44.36 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 5,
+        "available": true,
+        "quantity": 1,
+        "mealGroup": "Order 1"
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 1000,
+    "status": "confirmed",
+    "date": "2026-02-23T13:42:03.141Z"
+  },
+  {
+    "id": "VERIFY-SYNC-001",
+    "fees": {
+      "takeaway": 0,
+      "delivery": 0
+    },
+    "total": 800,
+    "customer": {
+      "notes": "checking if this appears immediately",
+      "name": "Verification Test",
+      "phone": "000",
+      "address": "Testing Lab"
+    },
+    "date": "2026-02-23T14:36:27.293Z",
+    "items": [
+      {
+        "price": 400,
+        "quantity": 2,
+        "name": "Jollof Rice",
+        "id": "mains-1"
+      }
+    ],
+    "status": "dispatched"
+  },
+  {
+    "id": "TEST-ORDER-123",
+    "fees": {
+      "takeaway": 0,
+      "delivery": 0
+    },
+    "total": 400,
+    "customer": {
+      "notes": "testing",
+      "name": "Test Person",
+      "phone": "555",
+      "address": "123 Test St"
+    },
+    "date": "2026-02-23T14:12:59.016Z",
+    "items": [
+      {
+        "price": 400,
+        "quantity": 1,
+        "name": "Jollof Rice",
+        "id": "mains-1"
+      }
+    ],
+    "status": "cancelled"
+  },
+  {
+    "id": "ORD-54649",
+    "customer": {
+      "name": "ika",
+      "phone": "345893",
+      "address": "3539",
+      "notes": "extra creamy"
+    },
+    "items": [
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/WhatsApp Image 2026-02-05 at 6.44.36 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 5,
+        "available": true,
+        "quantity": 4
+      },
+      {
+        "id": "mains-4-mini",
+        "name": "Basmati Rice (Mini)",
+        "price": 2000,
+        "image": "/special basmati-rice.jpg.jpeg",
+        "category": "Mains",
+        "rating": 5,
+        "available": true,
+        "quantity": 4
+      }
+    ],
+    "fees": {
+      "takeaway": 300,
+      "delivery": 500
+    },
+    "total": 10000,
+    "status": "delivered",
+    "date": "2026-02-20T13:34:53.380Z"
+  },
+  {
+    "id": "ORD-50502",
+    "customer": {
+      "name": "2",
+      "phone": "2",
+      "address": "2",
+      "notes": "2"
+    },
+    "items": [
+      {
+        "id": "mains-6",
+        "name": "Special Stir Fry Pasta",
+        "price": 3000,
+        "image": "/special stairfry-pasta.jpg.jpeg",
+        "category": "Mains",
+        "featured": false,
+        "rating": 5,
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 3700,
+    "status": "delivered",
+    "date": "2026-02-20T12:46:11.683Z"
+  },
+  {
+    "id": "ORD-24255",
+    "customer": {
+      "name": "DO",
+      "phone": "3",
+      "address": "SFD",
+      "notes": "EXTRA CREAMY"
+    },
+    "items": [
+      {
+        "id": "mains-1",
+        "name": "Jollof Rice",
+        "price": 400,
+        "image": "/jollof-rice.jpg.jpg",
+        "category": "Mains",
+        "featured": false,
+        "isNew": false,
+        "rating": 5,
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 1100,
+    "status": "cancelled",
+    "date": "2026-02-20T12:37:51.393Z"
+  },
+  {
+    "id": "ORD-7377",
+    "customer": {
+      "name": "DAVID",
+      "phone": "DWE",
+      "address": "53",
+      "notes": "WE"
+    },
+    "items": [
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/WhatsApp Image 2026-02-05 at 6.44.36 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 5,
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 1000,
+    "status": "delivered",
+    "date": "2026-02-20T10:49:38.568Z"
+  },
+  {
+    "id": "ORD-26735",
+    "customer": {
+      "name": "DAVE",
+      "phone": "080392",
+      "address": "HOSTEL C",
+      "notes": "EXTRA CREAMY "
+    },
+    "items": [
+      {
+        "id": "mains-5",
+        "name": "Stir Fry Pasta",
+        "price": 1500,
+        "image": "/WhatsApp Image 2026-02-05 at 6.45.21 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 4,
+        "quantity": 5
+      }
+    ],
+    "fees": {
+      "takeaway": 300,
+      "delivery": 500
+    },
+    "total": 8300,
+    "status": "delivered",
+    "date": "2026-02-20T09:43:24.073Z"
+  },
+  {
+    "id": "ORD-42878",
+    "customer": {
+      "name": "GA",
+      "phone": "42",
+      "address": "G",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "rating": 4,
+        "quantity": 1
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 500
+    },
+    "total": 1100,
+    "status": "delivered",
+    "date": "2026-02-20T08:39:36.946Z"
+  },
+  {
+    "id": "ORD-17774",
+    "customer": {
+      "name": "WALE",
+      "phone": "4R80539432",
+      "address": "HOSTEL S",
+      "notes": "EXTRA CREAMY"
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "rating": 4,
+        "quantity": 1
+      },
+      {
+        "id": "protein-3",
+        "name": "Sausages",
+        "price": 300,
+        "image": "/susage-image.jpg.jpg",
+        "category": "Protein & Sauces",
+        "quantity": 2
+      },
+      {
+        "id": "protein-1",
+        "name": "Beef",
+        "price": 300,
+        "image": "/beef-image.jpg.jpg",
+        "category": "Protein & Sauces",
+        "quantity": 1
+      },
+      {
+        "id": "protein-6",
+        "name": "Egg (Boiled)",
+        "price": 300,
+        "image": "/boiled-egg.jpg.jpg",
+        "category": "Protein & Sauces",
+        "quantity": 1
+      },
+      {
+        "id": "sides-1",
+        "name": "Plantain",
+        "price": 300,
+        "image": "/plaintain-image.jpg.jpeg",
+        "category": "Sides",
+        "quantity": 2
+      }
+    ],
+    "fees": {
+      "takeaway": 300,
+      "delivery": 500
+    },
+    "total": 3000,
+    "status": "delivered",
+    "date": "2026-02-20T08:15:48.931Z"
+  },
+  {
+    "id": "ORD-34929",
+    "customer": {
+      "name": "greize man ",
+      "phone": "4543",
+      "address": "hostel s",
+      "notes": "extra creamy pls"
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "rating": 4,
+        "quantity": 1
+      },
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/WhatsApp Image 2026-02-05 at 6.44.36 PM.jpeg",
+        "category": "Mains",
+        "featured": true,
+        "rating": 5,
+        "quantity": 1
+      },
+      {
+        "id": "mains-4-mini",
+        "name": "Basmati Rice (Mini)",
+        "price": 2000,
+        "image": "/special basmati-rice.jpg.jpeg",
+        "category": "Mains",
+        "rating": 5,
+        "quantity": 1
+      },
+      {
+        "id": "protein-2",
+        "name": "Goat",
+        "price": 500,
+        "image": "/goat-meat.jpg.jpg",
+        "category": "Protein & Sauces",
+        "quantity": 1
+      },
+      {
+        "id": "protein-3",
+        "name": "Sausages",
+        "price": 300,
+        "image": "/susage-image.jpg.jpg",
+        "category": "Protein & Sauces",
+        "quantity": 1
+      },
+      {
+        "id": "protein-6",
+        "name": "Egg (Boiled)",
+        "price": 300,
+        "image": "/boiled-egg.jpg.jpg",
+        "category": "Protein & Sauces",
+        "quantity": 1
+      }
+    ],
+    "fees": {
+      "takeaway": 200,
+      "delivery": 1000
+    },
+    "total": 5000,
+    "status": "delivered",
+    "date": "2026-02-19T21:44:14.797Z"
+  },
+  {
+    "id": "ORD-43153",
+    "customer": {
+      "name": "Francis",
+      "phone": "07035758561",
+      "address": "hostel m",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "quantity": 2
+      }
+    ],
+    "total": 800,
+    "status": "delivered",
+    "date": "2026-02-06T18:17:49.555Z"
+  },
+  {
+    "id": "ORD-83173",
+    "customer": {
+      "name": "kelechi ",
+      "phone": "0804930",
+      "address": "hostel s",
+      "notes": "hks"
+    },
+    "items": [
+      {
+        "id": "mains-1",
+        "name": "Jollof Rice",
+        "price": 400,
+        "image": "/jollof-rice.jpg.jpg",
+        "category": "Mains",
+        "featured": true,
+        "quantity": 1
+      }
+    ],
+    "total": 400,
+    "status": "delivered",
+    "date": "2026-02-05T18:42:16.450Z"
+  },
+  {
+    "id": "ORD-14349",
+    "customer": {
+      "name": "david",
+      "phone": "4",
+      "address": "231",
+      "notes": "eq"
+    },
+    "items": [
+      {
+        "id": "mains-7",
+        "name": "Tomato Pasta",
+        "price": 1200,
+        "image": "/tomato-pasta.jpg.jpg",
+        "category": "Mains",
+        "quantity": 1
+      }
+    ],
+    "total": 1200,
+    "status": "delivered",
+    "date": "2026-02-04T11:02:29.181Z"
+  },
+  {
+    "id": "ORD-9840",
+    "customer": {
+      "name": "david ",
+      "phone": "08039246225",
+      "address": "hostel S",
+      "notes": "pls hurry up"
+    },
+    "items": [
+      {
+        "id": "mains-2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "quantity": 1
+      }
+    ],
+    "total": 400,
+    "status": "completed",
+    "date": "2026-02-04T10:36:44.617Z"
+  },
+  {
+    "id": "ORD-19776",
+    "customer": {
+      "name": "david",
+      "phone": "08039246225",
+      "address": "david abuh",
+      "notes": "ok"
+    },
+    "items": [
+      {
+        "id": "mains-3",
+        "name": "Steamed Rice",
+        "price": 300,
+        "image": "/food-rice.png",
+        "category": "Mains",
+        "quantity": 1
+      },
+      {
+        "id": "mains-4",
+        "name": "Special Basmati Rice",
+        "price": 3500,
+        "image": "/special basmati-rice.jpg.jpeg",
+        "category": "Mains",
+        "quantity": 1
+      }
+    ],
+    "total": 3800,
+    "status": "cancelled",
+    "date": "2026-02-03T16:34:03.970Z"
+  },
+  {
+    "id": "ORD-13425",
+    "customer": {
+      "name": "john doe",
+      "phone": "08039234",
+      "address": "hostel s",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "m2",
+        "name": "Fried Rice",
+        "price": 400,
+        "image": "/fried-rice.jpg.jpg",
+        "category": "Mains",
+        "calories": 260,
+        "quantity": 2
+      }
+    ],
+    "total": 800,
+    "status": "cancelled",
+    "date": "2026-02-03T15:33:59.156Z"
+  },
+  {
+    "id": "ORD-45238",
+    "customer": {
+      "name": "as",
+      "phone": "sA",
+      "address": "AS",
+      "notes": "ASD"
+    },
+    "items": [
+      {
+        "id": "m1",
+        "name": "Jollof Rice",
+        "price": 400,
+        "image": "/jollof-rice.jpg.jpg",
+        "category": "Mains",
+        "featured": true,
+        "calories": 250,
+        "quantity": 1
+      }
+    ],
+    "total": 400,
+    "status": "cancelled",
+    "date": "2026-02-01T08:38:44.804Z"
+  },
+  {
+    "id": "ORD-68429",
+    "customer": {
+      "name": "efd",
+      "phone": "sds",
+      "address": "sdsd",
+      "notes": "sds"
+    },
+    "items": [
+      {
+        "id": "m4",
+        "name": "Special Basmati Rice",
+        "price": 3500,
+        "image": "/special basmati-rice.jpg.jpeg",
+        "category": "Mains",
+        "calories": 300,
+        "quantity": 1
+      }
+    ],
+    "total": 3500,
+    "status": "completed",
+    "date": "2026-02-01T01:18:21.295Z"
+  },
+  {
+    "id": "ORD-001",
+    "customer": {
+      "name": "John Doe",
+      "phone": "+234 800 123 4567",
+      "address": "123 Main St, Lagos",
+      "notes": "Please ring the doorbell"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Jollof Rice",
+        "price": 2500,
+        "quantity": 2
+      },
+      {
+        "id": 2,
+        "name": "Grilled Chicken",
+        "price": 3500,
+        "quantity": 1
+      }
+    ],
+    "total": 8500,
+    "status": "completed",
+    "date": "2026-02-01T04:00:00.000Z"
+  },
+  {
+    "id": "ORD-002",
+    "customer": {
+      "name": "Jane Smith",
+      "phone": "+234 800 987 6543",
+      "address": "456 Park Ave, Abuja",
+      "notes": "Leave at the gate"
+    },
+    "items": [
+      {
+        "id": 3,
+        "name": "Fried Rice",
+        "price": 2800,
+        "quantity": 1
+      },
+      {
+        "id": 4,
+        "name": "Beef Stew",
+        "price": 1500,
+        "quantity": 2
+      }
+    ],
+    "total": 5800,
+    "status": "completed",
+    "date": "2026-01-31T04:00:00.000Z"
+  }
+]

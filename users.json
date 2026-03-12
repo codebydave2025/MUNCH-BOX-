@@ -1,0 +1,26 @@
+[
+  {
+    "id": "user-1771620561713",
+    "name": "mike",
+    "email": "mike@gmail.come",
+    "phone": "123456789",
+    "password": "mikemike",
+    "createdAt": "2026-02-20T20:49:21.713Z"
+  },
+  {
+    "id": "user-1771620749712",
+    "name": "wale",
+    "email": "wale@gmail.com",
+    "phone": "08039246225",
+    "password": "12345678",
+    "createdAt": "2026-02-20T20:52:29.712Z"
+  },
+  {
+    "id": "user-1771854101396",
+    "name": "daniel",
+    "email": "daniel@gmail.com",
+    "phone": "093930",
+    "password": "12345678",
+    "createdAt": "2026-02-23T13:41:41.396Z"
+  }
+]

@@ -1,0 +1,45 @@
+{
+    "storeName": "MUNCHBOX",
+    "email": "hello@munchbox.com",
+    "phone": "+234 801 234 5678",
+    "currency": "Nigerian Naira (₦)",
+    "address": "123 Food Street, Victoria Island, Lagos, Nigeria",
+    "deliveryFee": 500,
+    "hours": {
+        "Monday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        },
+        "Tuesday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        },
+        "Wednesday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        },
+        "Thursday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        },
+        "Friday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        },
+        "Saturday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        },
+        "Sunday": {
+            "open": "08:00",
+            "close": "22:00",
+            "active": true
+        }
+    }
+}
