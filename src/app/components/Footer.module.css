@@ -1,0 +1,136 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 3rem 0 0;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialLink {
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+    color: white;
+}
+
+.socialLink:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+.heading {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 0.75rem;
+}
+
+.list a,
+.list li {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.2s;
+    font-size: 1rem;
+}
+
+.list a:hover {
+    color: white;
+}
+
+.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        /* Reduced from 2.5rem */
+        text-align: center;
+        padding-bottom: 1rem;
+        /* Reduced from 2rem */
+    }
+
+    .footer {
+        padding: 2rem 0 0;
+        /* Reduced top padding from 3rem */
+        margin-top: 2rem;
+        /* Reduced from 3rem */
+    }
+
+    .text {
+        margin: 0 auto 1rem;
+        /* Reduced margin */
+        font-size: 0.9rem;
+        /* Slightly smaller text */
+    }
+
+    .socials {
+        justify-content: center;
+        gap: 0.75rem;
+        /* Tighter gap */
+    }
+
+    .heading {
+        margin-bottom: 0.75rem;
+        /* Tighter heading space */
+        font-size: 1rem;
+    }
+
+    .list li {
+        margin-bottom: 0.4rem;
+        /* Tighter list items */
+    }
+
+    .bottom {
+        padding: 0.75rem 0;
+        /* Compact copyright section */
+    }
+}

@@ -1,0 +1,342 @@
+.main {
+    padding: 2rem 0;
+    min-height: 100vh;
+    background: transparent;
+}
+
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+}
+
+/* Sidebar Styles */
+.profileSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profileCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px rgba(211, 47, 47, 0.2);
+}
+
+.userName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.userEmail {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.memberBadge {
+    background: #fff8e1;
+    color: #f57f17;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+}
+
+.userInfoList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.infoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.label {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+}
+
+.value {
+    color: #fff;
+    font-weight: 600;
+}
+
+.quickActions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.actionBtn {
+    background: #fff;
+    color: #d32f2f;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.actionBtn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.secondaryBtn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.secondaryBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Main Content Styles */
+.dashboardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dashboardHeader h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dashboardHeader p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.promoSection {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.promoImageContainer {
+    width: 100%;
+    position: relative;
+}
+
+.promoImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.emptyState {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hint {
+    display: block;
+    margin-top: 0.5rem;
+    color: #ffcc00;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.orderCard {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 1.5rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.75rem;
+}
+
+.orderId {
+    font-weight: 800;
+    color: #d32f2f;
+    font-size: 1.1rem;
+}
+
+.orderStatus {
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #fff8e1;
+    color: #f57f17;
+}
+
+.orderStatus.pending {
+    background: #fff8e1;
+    color: #f57f17;
+}
+
+.orderStatus.confirmed {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.orderStatus.packaging {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.orderStatus.dispatched {
+    background: #e0f2f1;
+    color: #00796b;
+}
+
+.orderStatus.delivered {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.orderStatus.cancelled {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.orderItems {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.itemLine {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.totalAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 0.75rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+.activityList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activityItem {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.activityInfo h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.activityInfo p {
+    margin: 2px 0 0;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.activityTotal {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .dashboardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .profileSidebar {
+        order: 2;
+    }
+
+    .dashboardContent {
+        order: 1;
+    }
+}

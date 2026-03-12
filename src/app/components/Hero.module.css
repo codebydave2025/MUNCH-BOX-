@@ -1,0 +1,251 @@
+.hero {
+    padding: 0 0 1rem;
+    margin-top: -120px;
+    padding-top: 120px;
+    overflow: visible;
+    position: relative;
+    background-image: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%), url('/28e654cf-a57a-405c-8e92-035deb302ebb-Photoroom.png');
+    background-repeat: repeat;
+    background-size: auto, 300px;
+    background-blend-mode: overlay;
+    /* Clip only horizontally, allow vertical overflow for the image */
+    clip-path: none;
+    z-index: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: flex-start;
+    /* Align content to the top */
+    padding-top: 3rem;
+    gap: 4rem;
+    max-width: 1200px;
+    /* Increased from 900px for a more expansive desktop layout */
+    margin: 0 auto;
+}
+
+.content {
+    z-index: 10;
+    position: relative;
+}
+
+.title {
+    font-size: 5.8rem;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    font-weight: 800;
+}
+
+/* Ensure no ::before decorative content appears */
+.title::before {
+    content: none;
+    display: none;
+}
+
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 300px;
+    height: 4px;
+    background: linear-gradient(to right, #FF0000, #FF4D4D);
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+}
+
+/* Removed redundant underline underline decorative element */
+
+.highlightYellow {
+    color: #FFD700;
+    /* Vibrant Gold/Yellow */
+    display: inline-block;
+}
+
+.highlight {
+    color: white;
+    /* Changed to white */
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.description {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-40px, -3rem);
+    /* Shifted slightly to the left as requested */
+    justify-content: flex-end;
+    z-index: 5;
+}
+
+.circleBg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Matching Menu tab translucency */
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(15px);
+    /* Matching Menu tab blur */
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Matching Menu tab border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Matching Menu tab shadow */
+}
+
+.foodImage {
+    width: 100%;
+    /* Larger image to maintain impact within the container */
+    max-width: none;
+    height: auto;
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.4));
+    transform: rotate(0deg);
+}
+
+/* Simplified Wave Lines - Reduced for better food image visibility */
+/* Removed illustration lines */
+
+/* Removed animations for cleaner, static design - food image now displays properly */
+
+@media (max-width: 960px) {
+    .hero {
+        padding: 0;
+        margin-top: 0;
+        padding-top: 0;
+        height: auto;
+        overflow: visible;
+        padding-bottom: 0;
+        /* Extend red background to cover behind the image */
+        background-attachment: scroll;
+        padding-bottom: 3rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 42vh;
+        padding: 3.5rem 1.5rem 1rem;
+        z-index: 10;
+        position: relative;
+    }
+
+    .title {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+        line-height: 0.95;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .title::after {
+        width: 150px;
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Image wrapper — pulled up so full image is visible */
+    .imageWrapper {
+        transform: none;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+        margin-top: -3rem;
+        overflow: visible;
+        position: relative;
+        z-index: 5;
+    }
+
+    .circleBg {
+        display: none;
+    }
+
+    /* Full burger image — no cropping at all */
+    .foodImage {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: block;
+        filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+    }
+}
+
+
+
+/* Custom Shape Divider Styles - Centered Behind Content */
+.custom-shape-divider-top-1769899597 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.custom-shape-divider-top-1769899597 svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.custom-shape-divider-top-1769899597 .shape-fill {
+    fill: rgba(255, 255, 255, 0.15);
+}
+
+/* Unified styling for both desktop and mobile */
+@media (max-width: 960px) {
+    .custom-shape-divider-top-1769899597 svg {
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+    }
+}

@@ -1,0 +1,224 @@
+.main {
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 0.75rem;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.tab:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.activeTab {
+    background: white;
+    color: #D32F2F;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mealOptions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mealBtn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    border: 1px solid rgba(211, 47, 47, 0.3);
+    background: transparent;
+    color: #D32F2F;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.mealBtn:hover {
+    background: rgba(211, 47, 47, 0.1);
+    border-color: #D32F2F;
+}
+
+.mealBtnActive {
+    background: #D32F2F;
+    color: white;
+    border-color: #D32F2F;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.setupContainer {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.setupBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: white;
+    color: #D32F2F;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.setupBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.setupDropdown {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid rgba(211, 47, 47, 0.1);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.setupSection h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #D32F2F;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.setupOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.optionBtn {
+    padding: 1rem;
+    border: 2px solid #eee;
+    background: transparent;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #333;
+}
+
+.optionBtn:hover {
+    border-color: #D32F2F;
+    background: #fff5f5;
+    color: #D32F2F;
+}
+
+.setupHint {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.addPersonBtn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    border: 2px dashed #D32F2F;
+    background: transparent;
+    color: #D32F2F;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addPersonBtn:hover {
+    background: #D32F2F;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .setupOptions {
+        grid-template-columns: 1fr;
+    }
+}
